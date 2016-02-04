@@ -2,8 +2,6 @@ package com.anup.work;
 
 import com.anup.work.parser.YamlConfigRunner;
 
-import java.io.IOException;
-
 /**
  * Hello world!
  *
@@ -11,6 +9,6 @@ import java.io.IOException;
 public class App 
 {
     public static void main( String[] args ) throws Exception {
-        YamlConfigRunner.parse();
+        new YamlConfigRunner().parse();
     }
 }
