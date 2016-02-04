@@ -1,17 +1,18 @@
 package com.anup.work.pojo;
 
-import static java.lang.String.format;
-
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+
+import static java.lang.String.format;
 
 public final class Configuration {
     private Date released;
     private String version;
     private Connection connection;
     private List<String> protocols;
-    private Map<String, String> users;
+    private Map<String, ArrayList<String>> users;
 
     public Date getReleased() {
         return released;
@@ -45,11 +46,11 @@ public final class Configuration {
         this.protocols = protocols;
     }
 
-    public Map<String, String> getUsers() {
+    public Map<String, ArrayList<String>> getUsers() {
         return users;
     }
 
-    public void setUsers(Map<String, String> users) {
+    public void setUsers(Map<String, ArrayList<String>> users) {
         this.users = users;
     }
 

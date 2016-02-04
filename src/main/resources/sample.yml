@@ -13,5 +13,10 @@ version: 1.0
 
         # Users
         users:
-        tom: passwd
-        bob: passwd
+        tom:
+        - passwd1
+        - passwd2
+        - passwd3
+        bob:
+        - pass21
+        - passwd12
