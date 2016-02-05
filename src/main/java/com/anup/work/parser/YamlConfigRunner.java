@@ -9,7 +9,7 @@ public class YamlConfigRunner {
     public void parse() throws Exception {
         Yaml yaml = new Yaml();
 
-        String fileName = "src/main/resources/sample.yml";
+        //String fileName = "src/main/resources/sample.yml";
         try {
             //InputStream in = (FileInputStream )this.getClass().getClassLoader().getResourceAsStream("sample.yml);
             InputStream resourceAsStream = Thread.currentThread().getContextClassLoader().getResourceAsStream("sample.yml");
